@@ -1,0 +1,24 @@
+{
+  "name": "vuepress-theme-concise",
+  "version": "1.0.0",
+  "description": "vuepress theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoungsunLi/vuepress-theme-concise.git"
+  },
+  "keywords": [
+    "vuepress",
+    "theme",
+    "vue"
+  ],
+  "author": "Youngsun <lsun@live.cn>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YoungsunLi/vuepress-theme-concise/issues"
+  },
+  "homepage": "https://github.com/YoungsunLi/vuepress-theme-concise#readme"
+}
