@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="home">
         <div v-for="page of $site.pages.filter(item => item.path !== '/')">
             <router-link :to="page.path">
                 {{page.title}}

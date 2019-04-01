@@ -1,5 +1,8 @@
 <template>
     <div class="theme-container">
+
+        <headers></headers>
+
         <navbar></navbar>
 
         <home v-if="$page.frontmatter.home"></home>
@@ -11,6 +14,7 @@
 </template>
 
 <script>
+    import Headers from '../components/Headers'
     import Navbar from '../components/Navbar'
     import Home from '../components/Home'
     import Page from '../components/Page'
@@ -19,6 +23,7 @@
     export default {
         name: "Layout",
         components: {
+            Headers,
             Navbar,
             Home,
             Page,
