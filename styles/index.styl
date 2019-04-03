@@ -17,8 +17,11 @@ body
   font-size 16px
   color $textColor
 
-.page
+.page, .home
   padding-left $sidebarWidth
+
+.home
+  margin-top $headersHeight
 
 .headers
   position fixed
@@ -27,7 +30,6 @@ body
   left 0
   right 0
   height $headersHeight
-  padding 0.5rem
   background-color #fff
   box-sizing border-box
   border-bottom 1px solid $borderColor
@@ -173,7 +175,7 @@ th, td
     .sidebar
       display none
 
-    .page
+    .page, .home
       padding-left 0
 
 @require './mobile.styl'

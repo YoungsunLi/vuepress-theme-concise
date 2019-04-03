@@ -1,16 +1,19 @@
 <template>
     <div class="home">
         <div v-for="page of $site.pages.filter(item => item.path !== '/')">
-            <router-link :to="page.path">
-                {{page.title}}
-            </router-link>
+            <card-post :title="page.title" :path="page.path"></card-post>
         </div>
     </div>
 </template>
 
 <script>
+    import CardPost from './CardPost'
+
     export default {
-        name: "Home"
+        name: "Home",
+        components: {
+            CardPost
+        }
     }
 </script>
 
