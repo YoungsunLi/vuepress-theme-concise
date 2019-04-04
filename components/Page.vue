@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <main>
         <Content></Content>
-    </div>
+    </main>
 </template>
 
 <script>
@@ -10,6 +10,6 @@
     }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
 
 </style>

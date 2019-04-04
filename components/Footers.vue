@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <footer class="footers">
         footer
-    </div>
+    </footer>
 </template>
 
 <script>
@@ -10,6 +10,6 @@
     }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
 
 </style>

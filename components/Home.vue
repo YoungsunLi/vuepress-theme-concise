@@ -1,9 +1,9 @@
 <template>
-    <div class="home">
+    <main class="home">
         <div v-for="page of $site.pages.filter(item => item.path !== '/')">
             <card-post :title="page.title" :path="page.path"></card-post>
         </div>
-    </div>
+    </main>
 </template>
 
 <script>
@@ -17,6 +17,6 @@
     }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
 
 </style>

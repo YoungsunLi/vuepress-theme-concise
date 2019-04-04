@@ -23,8 +23,6 @@
             font-size 1.375rem
             font-weight 600
             color $textColor
-            position relative
             line-height 24px
-            vertical-align middle
 
 </style>
