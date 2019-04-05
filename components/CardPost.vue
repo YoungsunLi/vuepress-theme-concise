@@ -25,7 +25,7 @@
         margin 0
 
     .card-post
-        margin 8px
+        margin 12px
         padding: 16px 19px
         box-shadow 0 0 22px #e2ebf0;
         border-radius 8px;
