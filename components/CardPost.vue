@@ -1,7 +1,7 @@
 <template>
     <div class="card-post">
         <router-link :to="path" class="card-post-link">
-            <h2>{{title}}</h2>
+            <h3>{{title}}</h3>
             <aside class="card-post-aside">
                 <div class="card-post-date">2019</div>
                 <div class="card-post-more">→</div>
@@ -21,18 +21,20 @@
 </script>
 
 <style lang="stylus" scoped>
-    h2
+    h3
         margin 0
+        padding-bottom 0.2rem
+        border-bottom 1px solid $borderColor
 
     .card-post
-        margin 12px
-        padding: 16px 19px
-        box-shadow 0 0 22px #e2ebf0;
+        margin 8px
+        padding: 16px 19px 0 19px
+        box-shadow 0 3px 16px $borderColor;
         border-radius 8px;
         flex-grow 1
 
         &-aside
-            padding-top 14px
+            padding 8px 0
 
         &-link
             color $textColor

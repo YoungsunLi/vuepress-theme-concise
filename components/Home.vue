@@ -21,6 +21,6 @@
     .posts-box
         display flex
         flex-wrap wrap
-        margin 0 12px
+        margin 0 14px
 
 </style>
