@@ -25,11 +25,11 @@
         margin 0
 
     .card-post
-        margin 10px
-        padding: 16px 20px
-        width 18rem
-        box-shadow 0 0 24px #e2ebf0;
+        margin 8px
+        padding: 16px 19px
+        box-shadow 0 0 22px #e2ebf0;
         border-radius 8px;
+        flex-grow 1
 
         &-aside
             padding-top 14px
