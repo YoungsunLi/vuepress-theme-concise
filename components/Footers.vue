@@ -1,6 +1,6 @@
 <template>
     <footer class="footers">
-        footer
+        © 2018-2019 Youngsun Li. Powered by VuePress.
     </footer>
 </template>
 
@@ -11,5 +11,6 @@
 </script>
 
 <style lang="stylus" scoped>
+
 
 </style>

@@ -18,6 +18,9 @@
 </script>
 
 <style lang="stylus" scoped>
+    .home
+        min-height calc(100vh - 8.9rem) //8rem = $headersHeight + $footersHeight
+
     .posts-box
         display flex
         flex-wrap wrap

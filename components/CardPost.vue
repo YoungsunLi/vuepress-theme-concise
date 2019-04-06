@@ -29,8 +29,8 @@
     .card-post
         margin 8px
         padding: 16px 19px 0 19px
-        box-shadow 0 3px 16px $borderColor;
-        border-radius 8px;
+        box-shadow 0 1px 16px $borderColor
+        border-radius 8px
         flex-grow 1
 
         &-aside
