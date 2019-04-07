@@ -12,5 +12,5 @@
 
 <style lang="stylus" scoped>
     .pages
-        min-height calc(100vh - 5.2rem)
+        min-height calc(100vh - 4.1rem)
 </style>

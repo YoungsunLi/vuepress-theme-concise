@@ -19,11 +19,11 @@
 
 <style lang="stylus" scoped>
     .home
-        min-height calc(100vh - 8.9rem) //8rem = $headersHeight + $footersHeight
+        min-height calc(100vh - 8.1rem) //8rem = $headersHeight + $footersHeight
 
     .posts-box
         display flex
         flex-wrap wrap
-        margin 0 14px
+        padding  14px
 
 </style>
