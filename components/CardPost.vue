@@ -31,6 +31,7 @@
         padding: 16px 19px 0 19px
         box-shadow 0 1px 16px $borderColor
         border-radius 8px
+        border: 1px solid $borderColor;
         flex-grow 1
 
         &-aside

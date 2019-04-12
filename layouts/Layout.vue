@@ -3,7 +3,7 @@
 
         <headers></headers>
 
-        <navbar></navbar>
+        <sidebar></sidebar>
 
         <home v-if="$page.frontmatter.home"></home>
 
@@ -15,7 +15,7 @@
 
 <script>
     import Headers from '../components/Headers'
-    import Navbar from '../components/Navbar'
+    import Sidebar from '../components/Sidebar'
     import Home from '../components/Home'
     import Page from '../components/Page'
     import Footers from '../components/Footers'
@@ -24,7 +24,7 @@
         name: "Layout",
         components: {
             Headers,
-            Navbar,
+            Sidebar,
             Home,
             Page,
             Footers
