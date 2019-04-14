@@ -21,7 +21,7 @@
 
         <Content class="custom"/>
         <div class="posts-box">
-            <card-post :path="page.path" :title="page.title"
+            <card-post :path="page.path" :title="page.title" :lastUpdated="page.lastUpdated"
                        v-for="page of $site.pages.filter(item => item.path !== '/')"></card-post>
         </div>
 
@@ -56,8 +56,8 @@
 <style lang="stylus">
     .home
         padding $navbarHeight 2rem 0
-        max-width 960px
-        margin 0px auto
+        max-width 1200px
+        margin 0 auto
         display block
 
         .hero

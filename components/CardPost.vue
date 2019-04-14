@@ -3,7 +3,7 @@
         <router-link :to="path" class="card-post-link">
             <h3>{{title}}</h3>
             <aside class="card-post-aside">
-                <div class="card-post-date">2019</div>
+                <div class="card-post-date">{{lastUpdated}}</div>
                 <div class="card-post-more">→</div>
             </aside>
         </router-link>
@@ -15,7 +15,8 @@
         name: "CardPost",
         props: {
             title: String,
-            path: String
+            path: String,
+            lastUpdated: String
         }
     }
 </script>
@@ -23,7 +24,7 @@
 <style lang="stylus" scoped>
     h3
         margin 0
-        padding-bottom 0.2rem
+        padding-bottom 0.5rem
         border-bottom 1px solid $borderColor
 
     .card-post
