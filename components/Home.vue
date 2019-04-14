@@ -3,7 +3,7 @@
         <header class="hero">
             <img :alt="data.heroAlt || 'hero'" :src="$withBase(data.heroImage)" v-if="data.heroImage">
 
-            <h1 id="main-title" v-if="data.heroText !== null">{{ data.heroText || $title || 'Hello' }}</h1>
+            <h1 id="main-title" class="main-title" v-if="data.heroText !== null">{{ data.heroText || $title || 'Hello' }}</h1>
 
             <p class="description"> {{ data.tagline || $description || 'Welcome to your VuePress site' }} </p>
 
@@ -20,6 +20,7 @@
         </div>
 
         <Content class="custom"/>
+
         <div class="posts-box">
             <card-post :path="page.path" :title="page.title" :lastUpdated="page.lastUpdated"
                        v-for="page of $site.pages.filter(item => item.path !== '/')"></card-post>
@@ -74,6 +75,9 @@
 
             h1, .description, .action
                 margin 1.8rem auto
+
+            .main-title
+                font-size 53px
 
             .description
                 max-width 35rem
