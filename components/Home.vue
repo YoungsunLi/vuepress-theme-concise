@@ -21,10 +21,7 @@
 
         <Content class="custom"/>
 
-        <div class="posts-box">
-            <card-post :path="page.path" :title="page.title" :lastUpdated="page.lastUpdated"
-                       v-for="page of $site.pages.filter(item => item.path !== '/')"></card-post>
-        </div>
+        <posts-box></posts-box>
 
         <div class="footer" v-if="data.footer">
             {{ data.footer }}
@@ -34,10 +31,10 @@
 
 <script>
     import NavLink from '@theme/components/NavLink.vue'
-    import CardPost from '@theme/components/CardPost.vue'
+    import PostsBox from '@theme/components/PostsBox.vue'
 
     export default {
-        components: {NavLink, CardPost},
+        components: {PostsBox, NavLink},
 
         computed: {
             data() {
@@ -129,11 +126,6 @@
             border-top 1px solid $borderColor
             text-align center
             color lighten($textColor, 25%)
-
-    .posts-box
-        display flex
-        flex-wrap wrap
-        padding-bottom 2.5rem
 
     @media (max-width: $MQMobile)
         .home

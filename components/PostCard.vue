@@ -1,10 +1,10 @@
 <template>
-    <div class="card-post">
-        <router-link :to="path" class="card-post-link">
+    <div class="post-card">
+        <router-link :to="path" class="post-card-link">
             <h3>{{title}}</h3>
-            <aside class="card-post-aside">
-                <div class="card-post-date">{{lastUpdated}}</div>
-                <div class="card-post-more">→</div>
+            <aside class="post-card-aside">
+                <div class="post-card-date">{{lastUpdated}}</div>
+                <div class="post-card-more">→</div>
             </aside>
         </router-link>
     </div>
@@ -12,7 +12,7 @@
 
 <script>
     export default {
-        name: "CardPost",
+        name: "PostCard",
         props: {
             title: String,
             path: String,
@@ -27,7 +27,7 @@
         padding-bottom 0.5rem
         border-bottom 1px solid $borderColor
 
-    .card-post
+    .post-card
         margin 8px
         padding: 15px 19px 0 19px
         box-shadow 0 1px 16px $borderColor
