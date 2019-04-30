@@ -1,8 +1,7 @@
 <template>
     <div class="posts-box">
         <post-card :lastUpdated="page.lastUpdated" :path="page.path" :title="page.title"
-                   v-for="page of $site.pages.filter(item => item.path !== '/')"></post-card>
-
+                   v-for="page of getPosts"></post-card>
     </div>
 </template>
 
@@ -12,6 +11,19 @@
     export default {
         name: "PostsBox",
         components: {PostCard},
+        computed: {
+            getPosts() {
+                let pages = this.$site.pages.filter(item => item.path !== '/');
+                return pages.sort(this.postsSorter);
+            },
+        },
+        methods: {
+            postsSorter(prev, next) {
+                const prevTime = new Date(prev.lastUpdated).getTime() || new Date().getTime();
+                const nextTime = new Date(next.lastUpdated).getTime() || new Date().getTime();
+                return prevTime - nextTime > 0 ? -1 : 1;
+            }
+        }
     }
 </script>
 
