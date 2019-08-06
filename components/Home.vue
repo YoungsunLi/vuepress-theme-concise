@@ -38,7 +38,7 @@
       </div>
     </div>
 
-    <Content class="theme-default-content custom"/>
+    <PostsBox></PostsBox>
 
     <div
       class="footer"
@@ -51,9 +51,13 @@
 
 <script>
 import NavLink from '@theme/components/NavLink.vue'
+import PostsBox from '@theme/components/PostsBox.vue'
 
 export default {
-  components: { NavLink },
+  components: {
+    NavLink,
+    PostsBox
+  },
 
   computed: {
     data () {
@@ -73,8 +77,8 @@ export default {
 <style lang="stylus">
 .home
   padding $navbarHeight 2rem 0
-  max-width 960px
-  margin 0px auto
+  max-width 1200px
+  margin 0 auto
   display block
   .hero
     text-align center
@@ -148,7 +152,7 @@ export default {
         max-height 210px
         margin 2rem auto 1.2rem
       h1
-        font-size 2rem
+        font-size 3rem
       h1, .description, .action
         margin 1.2rem auto
       .description
