@@ -3,7 +3,7 @@
         <router-link :to="path" class="post-card-link">
             <h3>{{title}}</h3>
             <aside class="post-card-aside">
-                <div class="post-card-date">{{lastUpdated}}</div>
+                <div class="post-card-date">{{formatDate}}</div>
                 <div class="post-card-more">→</div>
             </aside>
         </router-link>
@@ -17,6 +17,12 @@
             title: String,
             path: String,
             lastUpdated: String
+        },
+        computed: {
+            formatDate() {
+                const lastUpdatedList = this.lastUpdated.split(' ');
+                return lastUpdatedList[0] + ' ' + (lastUpdatedList[2] || '');
+            }
         }
     }
 </script>
