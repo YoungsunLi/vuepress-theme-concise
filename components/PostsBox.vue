@@ -1,7 +1,7 @@
 <template>
     <div class="posts-box">
-        <post-card :lastUpdated="page.lastUpdated" :path="page.path" :title="page.title"
-                   v-for="page of getPosts"></post-card>
+        <PostCard :lastUpdated="page.lastUpdated" :path="page.path" :title="page.title"
+                  v-for="page of getPosts"></PostCard>
     </div>
 </template>
 
@@ -14,7 +14,9 @@
         computed: {
             getPosts() {
                 let pages = this.$site.pages.filter(item => item.path !== '/');
-                return pages.sort(this.postsSorter);
+                pages = pages.sort(this.postsSorter);
+                pages = this.formatDate(pages);
+                return pages;
             },
         },
         methods: {
@@ -22,6 +24,13 @@
                 const prevTime = new Date(prev.lastUpdated).getTime() || new Date().getTime();
                 const nextTime = new Date(next.lastUpdated).getTime() || new Date().getTime();
                 return prevTime - nextTime > 0 ? -1 : 1;
+            },
+            formatDate(pages) {
+                pages.forEach(page => {
+                    const lastUpdatedList = page.lastUpdated.split(' ');
+                    page.lastUpdated = lastUpdatedList[0] + ' ' + (lastUpdatedList[2] || '');
+                });
+                return pages;
             }
         }
     }
