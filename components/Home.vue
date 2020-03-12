@@ -77,7 +77,7 @@ export default {
 <style lang="stylus">
 .home
   padding $navbarHeight 2rem 0
-  max-width 1200px
+  max-width $contentWidth
   margin 0 auto
   display block
   .hero
