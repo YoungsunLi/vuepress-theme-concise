@@ -20,8 +20,8 @@
         },
         computed: {
             formatDate() {
-                const lastUpdatedList = this.lastUpdated.split(' ');
-                return lastUpdatedList[0] + ' ' + (lastUpdatedList[2] || '');
+                // '2019-4-14 17:05:46'
+                return this.lastUpdated ? this.lastUpdated.substring(0, this.lastUpdated.length - 3) : 'local post';
             }
         }
     }
