@@ -1,5 +1,5 @@
 <template>
-    <div class="posts-box">
+    <div class="home">
         <PostCard :lastUpdated="page.lastUpdated" :path="page.path" :title="page.title"
                   v-for="page of getPosts"></PostCard>
     </div>
@@ -28,9 +28,10 @@
 </script>
 
 <style lang="stylus" scoped>
-    .posts-box
+    .home
         display flex
         flex-wrap wrap
-        padding-bottom 2.5rem
+        padding 0 1rem 1.5rem
+        max-width $contentWidth
 
 </style>

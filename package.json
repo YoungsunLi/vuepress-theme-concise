@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/YoungsunLi/vuepress-theme-concise/issues"
   },
-  "homepage": "https://github.com/YoungsunLi/vuepress-theme-concise#readme"
+  "homepage": "https://github.com/YoungsunLi/vuepress-theme-concise#readme",
+  "dependencies": {
+    "@vuepress/plugin-back-to-top": "^1.4.1"
+  }
 }
