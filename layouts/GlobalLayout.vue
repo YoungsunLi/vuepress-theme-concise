@@ -16,6 +16,11 @@
         computed: {
             layout() {
                 if (this.$page.path) {
+                    if (this.$page.path === '/') {
+                        this.$page.frontmatter.home = true;
+                    }
+                    console.log(this)
+
                     if (this.$frontmatter.layout) {
                         return this.$frontmatter.layout
                     }

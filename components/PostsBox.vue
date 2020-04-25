@@ -31,7 +31,7 @@
     .home
         display flex
         flex-wrap wrap
-        padding 0 1rem 1.5rem
+        padding $navbarHeight+1rem 1rem 1.5rem
         max-width $contentWidth
 
 </style>
