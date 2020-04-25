@@ -15,12 +15,10 @@
     export default {
         computed: {
             layout() {
+                if (this.$pagination) {
+                    this.$page.frontmatter.home = true;
+                }
                 if (this.$page.path) {
-                    if (this.$page.path === '/') {
-                        this.$page.frontmatter.home = true;
-                    }
-                    console.log(this)
-
                     if (this.$frontmatter.layout) {
                         return this.$frontmatter.layout
                     }
